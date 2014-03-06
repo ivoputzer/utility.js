@@ -16,4 +16,11 @@ describe('Object', function() {
     })
   })
 
+  describe('.extend', function() {
+    it('overrides properties with the same name', function() {
+      var obj = {p: 1}.extend({p: 2})
+      obj.should.have.property('p', 2)
+    })
+  })
+
 })
