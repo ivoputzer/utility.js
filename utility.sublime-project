@@ -1,0 +1,51 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"npm run-script test-no-colors"
+			],
+			"name": "Dropple - npm",
+			"shell": true,
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"name": "utility.js",
+	"settings":
+	{
+		"auto_reload_changed": true,
+		"detect_indentation": true,
+		"folder_exclude_patterns":
+		[
+			".git",
+			"node_modules"
+		],
+		"scroll_past_end": true,
+		"tab_size": 2,
+		"todo":
+		{
+			"case_sensitive": false,
+			"patterns":
+			{
+				"CHANGED": "changed[\\s]*?:?[\\s]*?(?P<changed>\\S.*)$",
+				"FIXME": "fix ?me[\\s]*?:?[\\s]*?(?P<fixme>\\S.*)$",
+				"NOTE": "note[\\s]*?:?[\\s]*?(?P<note>.*)$",
+				"TODO": "todo[\\s]*?:?[\\s]*?(?P<todo>.*)$"
+			}
+		},
+		"translate_tabs_to_spaces": true,
+		"trim_trailing_white_space_on_save": true,
+		"use_tab_stops": true,
+		"word_separators": "./\\()\"'-:,.;<>~!@#$%^&#038;*|+=[]{}`~?",
+		"word_wrap": false,
+		"wrap_width": 0
+	}
+}
