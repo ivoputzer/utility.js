@@ -1,0 +1,34 @@
+{
+  "name": "utility.js",
+  "description": "a small collection of utility extensions for node.js",
+  "author": "Ivo von Putzer Reibegg",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "start": "if command -v node-dev > /dev/null 2>&1; then node-dev utility.js; else node utility.js; fi",
+    "test": "NODE_ENV=test mocha --require should --reporter spec --recursive ./opt/specs",
+    "test-watch": "NODE_ENV=test mocha --require should --reporter spec --recursive ./opt/specs --watch",
+    "test-no-colors": "NODE_ENV=test mocha --no-colors --require should --reporter spec --recursive ./opt/specs"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "utility.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivoputzer/utility.js.git"
+  },
+  "keywords": [
+    "utility",
+    "node",
+    "prototype",
+    "comodity"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivoputzer/utility.js/issues"
+  },
+  "homepage": "https://github.com/ivoputzer/utility.js"
+}
